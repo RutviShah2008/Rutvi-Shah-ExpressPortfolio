@@ -1,5 +1,44 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content  
+  .w-100
+  h2.mb-5 #{title}
+  .row
+    .col-sm-3
+      .card
+        .card-body
+          img.card-img-top(src='images/MedicalReport.png', alt='Card image cap')
+          .card-body
+            h5.card-title Medical report analysis using image processing 
+            p.card-text
+              | Analyse the medical report and tells the patient about their falls count and convert the image to pdf.
+            a.btn.btn-primary(href='http://www.ijtrd.com/papers/IJTRD8302.pdf') See Publication
+    .col-sm-3
+      .card
+        .card-body
+          img.card-img-top(src='images/ITMPlacement.png', alt='Card image cap')
+          .card-body
+            h5.card-title ITM Placement Center 
+            p.card-text
+              | For Palacement Professor which keep tarcks of the registred student for thir apllication, Interviews.
+    .col-sm-3
+      .card
+        .card-body
+          img.card-img-top(src='images/MedicalReport.png', alt='Card image cap')
+          .card-body
+            h5.card-title
+              | Health 
+              sup +
+            p.card-text
+              | This web application gives all information about the required nutrition and protein as per them age, height, and weight.
+    .col-sm-3
+      .card
+        .card-body
+          img.card-img-top(src='images/MedicalReport.png', alt='Card image cap')
+          .card-body
+            h5.card-title
+              | Arche Tracking System 
+            p.card-text Created Dashboard for Admin, VP and user which tracks user’s day to day work.  
+            a.btn.btn-primary(href='https://www.archesoftronix.com/') Visit
+
+

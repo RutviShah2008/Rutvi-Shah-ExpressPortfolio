@@ -3,37 +3,26 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Rutvi Shah' });
 });
 
 
 
 router.get('/about', (req, res, next) => {
-  res.render('about', {});
+  res.render('about', {title: 'Rutvi Shah'});
 });
 
-router.get('/projects', (req, res, next) => {
-  res.render('project', {});
+router.get('/project', (req, res, next) => {
+  res.render('project', {title: 'Have a look at my work!!!'});
 });
 
 router.get('/service', (req, res, next) => {
-  res.render('service', {});
+  res.render('service', {title: 'Services'});
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('contact', {});
+  res.render('contact', {title: 'ContactMe'});
 });
 
-// router.get('/:name',(req, res, next) => {
-//   const name = req.params.name;
-//   //Search our persons array and find where the name variable is equal 
-//   const navName = portfolio.find(per => per.path === name);
-//   //if no person generate an  error and pass to next function
-//   if (!navName){
-//     return next(new Error('You are not my family member - LOL!!!'));
-//   }
-//   //console.log(person);
-//   //Pass our found person to the person view
-//   res.render('navName',navName);
-// });
+
 module.exports = router;
