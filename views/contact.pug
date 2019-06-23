@@ -1,11 +1,10 @@
 extends layout
-
 block content
   form(action='/contact', method='post', role='form')
   .form-group
     label(for='email') Email * 
     input#email.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter email', required='required')
-    small#email.form-text.text-muted We'll never share your email with anyone else.
+    small#email.form-text.text-muted I'll never share your email with anyone else.
   .form-group
     label(for='name') Name *
     input#name.form-control(type='text', placeholder='Your Name', required='required')
