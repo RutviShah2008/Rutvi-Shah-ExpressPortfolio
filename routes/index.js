@@ -6,8 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('about', { title: 'Rutvi Shah' });
 });
 
-
-
 router.get('/about', (req, res, next) => {
   res.render('about', {title: 'Rutvi Shah'});
 });
@@ -23,6 +21,5 @@ router.get('/service', (req, res, next) => {
 router.get('/contact', (req, res, next) => {
   res.render('contact', {title: 'ContactMe'});
 });
-
 
 module.exports = router;

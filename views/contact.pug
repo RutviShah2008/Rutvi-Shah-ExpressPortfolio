@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1 Email: rutvi.shah2008@gmail.com
-  h1 Contact: +1(705)-870-1432
+  form(action='/contact', method='post', role='form')
+  .form-group
+    label(for='email') Email * 
+    input#email.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter email', required='required')
+    small#email.form-text.text-muted We'll never share your email with anyone else.
+  .form-group
+    label(for='name') Name *
+    input#name.form-control(type='text', placeholder='Your Name', required='required')
+  .form-group
+    label(for='name') Message *
+    textarea#message(name='message', placeholder='Enter your message here', rows='3', required='required')
+  .form-check
+    input#exampleCheck1.form-check-input(type='checkbox')
+    label.form-check-label(for='exampleCheck1') Human ? Check me out
+  button.btn.btn-primary(type='submit') Submit
